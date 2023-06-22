@@ -1,0 +1,15 @@
+set global time_zone = '+8:00';
+
+DROP DATABASE IF EXISTS cl3_AvilaInfante;
+
+CREATE DATABASE cl3_AvilaInfante;
+
+use cl3_AvilaInfante;
+
+CREATE TABLE IF NOT EXISTS Producto(
+id_prod int NOT NULL primary key AUTO_INCREMENT,
+nombre varchar(100) NOT NULL,
+descripcion varchar(100) NOT NULL,
+fecha varchar(20) NOT NULL
+
+);
